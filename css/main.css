@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+body{
+    color: #fdcd31;
+    background-color: #323232;
+}
+
+div.content{
+    width: 90%;
+    height: 2000px;
+    margin: 20px auto;
+    border: 1px solid #ffffff;
+}
+
+div.content .huoche{
+    position: relative;
+    width: 80%;
+    height: 800px;
+    border: 1px solid #ffffff;
+    margin: 20px auto;
+}
+
+div.content .calculator{
+    position: relative;
+    width: 80%;
+    height: 800px;
+    border: 1px solid #ffffff;
+    margin: 20px auto;
+}
+
+.calculator p{
+    position: relative;
+    
+}
+
+.calculator iframe{
+    position: relative;
+    width: 360px;
+    height: 640px;
+}
+
+.huoche p{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+.huoche iframe{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 320px;
+    height: 548px;
+}

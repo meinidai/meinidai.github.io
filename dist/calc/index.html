@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>简易计算器</title>
+    <link href="css/main.css" rel="stylesheet"/>
+</head>
+<body scroll="no">
+	<header class="navbar navbar-nav">
+		<h1 class="nav-title">简易计算器</h1>
+	</header>
+	<div class="content">
+		<div class="content-span" id="content-span">
+			<div class="result-panel" id="result-panel"><span class="span" id="result-span"></span></div>
+			<div class="input-panel" id="input-panel"><span class="span" id="input-span">0</span></div>
+		</div>
+		<div class="content-btn">
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-outlined btn-d">
+					D
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-o">
+					O
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-h">
+					H
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-clr">
+					Clr
+				</button>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					7
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					8
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					9
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-fn">
+					+
+				</button>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					4
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					5
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					6
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-fn">
+					-
+				</button>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					1
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					2
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					3
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-fn">
+					*
+				</button>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary btn-outlined btn-number">
+					0
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined" id="dot">
+					.
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-equal">
+					=
+				</button>
+				<button type="button" class="btn btn-primary btn-outlined btn-fn">
+					/
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	<script>
+		var borders = [ 
+			{key:"网页可见区域宽",value: document.body.clientWidth},
+			{key:"网页可见区域高",value: document.body.clientHeight},
+			{key:"网页可见区域宽",value: document.body.offsetWidth + "(包括边线的宽)"},
+			{key:"网页可见区域高",value: document.body.offsetHeight + "(包括边线的宽)"},
+			{key:"网页正文全文宽",value: document.body.scrollWidth},
+			{key:"网页正文全文高",value: document.body.scrollHeight},
+			{key:"网页被卷去的高",value: document.body.scrollTop},
+			{key:"网页被卷去的左",value: document.body.scrollLeft},
+			{key:"网页正文部分上",value: window.screenTop},
+			{key:"网页正文部分左",value: window.screenLeft},
+			{key:"屏幕分辨率的高",value: window.screen.height},
+			{key:"屏幕分辨率的宽",value: window.screen.width},
+			{key:"屏幕可用工作区高度",value: window.screen.availHeight},
+			{key:"屏幕可用工作区宽度",value: window.screen.availWidth}
+		];
+		for(var i in borders){
+			console.log(borders[i].key+borders[i].value)
+		}
+	</script>
+</body>
+</html>
