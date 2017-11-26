@@ -1,0 +1,44 @@
+<!doctype html>
+<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <title>meinidai</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <style>
+            .huoche_content{
+                height: 500px;
+                width: 500px;
+                margin: 50px auto;
+                position: relative;
+            }
+
+            .huoche_content p{
+                width: 100%;
+            }
+
+            .huoche_content iframe{
+                display: block;
+                width: 360px;
+                height: 640px;
+                border: none;
+                margin: 0px auto;
+            }
+
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
+            
+            a:hover{
+                color: #df3d2d;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="huoche_content">
+            <p>通过vue-cli与vue-router和vue-resource实现的站站查询和车次查询的小项目，<a href="https://github.com/meinidai/vue_huoche">源码请点击</a></p>
+            <iframe src="./dist/huoche/index.html"></iframe>
+        </div>
+    </body>
+</body>
