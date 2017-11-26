@@ -1,0 +1,36 @@
+<!doctype html>
+<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <title>meinidai</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <style>
+            .calc_content{
+                height: 500px;
+                width: 500px;
+                margin: 50px auto;
+                position: relative;
+            }
+
+            .calc_content p{
+                width: 100%;
+            }
+            
+            .calc_content iframe{
+                display: block;
+                width: 360px;
+                height: 640px;
+                border: none;
+                margin: 0px auto;
+            }
+        </style>
+        <script src="./js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="calc_content">
+            <p>简易计算器目前实现的功能有加减乘除，非负整数的二进制等，得出结果后咱不能继续进行其他操作，后续将完善这个功能并添加负数的计算等。</p>
+            <iframe src="./dist/calc/index.html"></iframe>
+        </div>
+    </body>
+</body>

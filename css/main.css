@@ -5,53 +5,72 @@
 
 body{
     color: #fdcd31;
-    background-color: #323232;
+    background-color: #fefefe;
+}
+
+div.nav img{
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
 }
 
 div.content{
     width: 90%;
-    height: 2000px;
-    margin: 20px auto;
-    border: 1px solid #ffffff;
+    margin: 0px auto;
+    height: 600px;
+    margin-bottom: 100px;
 }
 
-div.content .huoche{
+div.item{
     position: relative;
-    width: 80%;
-    height: 800px;
-    border: 1px solid #ffffff;
-    margin: 20px auto;
+    float: left;
+    border: 1px solid #eff0ef;
+    background: linear-gradient(#eff0ef, #fdfefd);
+    width: 26%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px -5px 5px 0px #f7f7f6,
+                -5px 0px 5px 0px #f7f7f6,
+                5px 0px 5px 0px #f7f7f6,
+                0px 5px 5px 0px #f7f7f6;
 }
 
-div.content .calculator{
-    position: relative;
-    width: 80%;
-    height: 800px;
-    border: 1px solid #ffffff;
-    margin: 20px auto;
+div.item2{
+    margin-left: 3%;
 }
 
-.calculator p{
-    position: relative;
-    
+div.item3{
+    margin-left: 3%;
+    width: 41%;
 }
 
-.calculator iframe{
-    position: relative;
-    width: 360px;
-    height: 640px;
+.item div img{
+    display: block;
+    margin: 0px auto;
+    height: 400px;
 }
 
-.huoche p{
+div#item1{
+    height: inherit;
+}
+
+div.div_shade{
     position: absolute;
-    left: 10%;
-    top: 20%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    opacity: 0.7;
+    display: none;
 }
 
-.huoche iframe{
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    width: 320px;
-    height: 548px;
+a{
+    text-decoration: none;
+    color: #f2f2f1;
+}
+
+a:hover{
+    color: #df3d2d;
 }

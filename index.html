@@ -5,23 +5,34 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
         <title>meinidai</title>
         <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/jquery-3.2.1.min.js"></script>
     </head>
     <body>
+        <div class="nav"><img src="./img/img02.png"></div>
         <div class="content">
-            <div class="huoche">
-                <p>没有广告的火车时刻表</p>
-                <div>
-                    <iframe src="./dist/huoche/index.html" id="huoche_frame"></iframe>
+            <div class="item item1">
+                <div id="item1">
+                    <img src="./img/calc.png">
+                </div>
+                <div class="div_shade">
+                    <p>这是一个简易计算器，除了可以进行简单的加减乘除外，还可以进行二进制、八进制和十六进制与十进制之间的转换，<a href="calc.html">More。</a></p>
                 </div>
             </div>
-            <div class="michess">
-                
+            <div class="item item2">
+                <div id="item2">
+                    <img src="./img/huoche.png">
+                </div>
+                <div class="div_shade"></div>
             </div>
-            <div class="calculator">
-                <div>
-                    <iframe src="./dist/calc/index.html" id="calc_frame"></iframe>
+            <div class="item item3">
+                <div id="item3">
+                    <img src="./img/mi_chess.png">
+                </div>
+                <div class="div_shade">
+                    <p>这是我小时候玩的一个小游戏，通过移动己方的三枚棋子连城一条对角线或是反对角线就能赢得胜利。纯JS原生实现，<a href="./dist/michess/index.html">More</a></p>
                 </div>
             </div>
         </div>
+        <script src="./js/main.js"></script>
     </body>
 </body>
